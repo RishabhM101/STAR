@@ -12,13 +12,18 @@ body, header,ul{
     height: 100vh; /* 100% of the viewport's height */
   
     /* Add a background image */
-    background-image: url('images/Astronaut.png');
+    background-image: url('images/Astronaut.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   
     /* Create a pseudo-element for the overlay */
     position: relative;
+  }
+  @media only screen and (max-width: 600px) {
+    .container {
+        background-image: url('images/Astronaut1.webp');
+    }
   }
   
   .container::before {
@@ -31,8 +36,33 @@ body, header,ul{
     left: 0;
   
     /* Set the color and opacity of the overlay */
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.837);
   }
+
+  .home-container {
+    /* Add a large text */
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    font-size: 5.5vw; /* Adjust this value to change the size of the text */
+    color: #ffffff; /* Change this value to change the color of the text */
+    text-align: left; /* This will anchor the text to the left */
+    
+  }
+  @media only screen and (max-width: 600px) {
+    .home-container {
+      font-size: 50px; /* Adjust this value to change the size of the text on mobile screens */
+      text-align: left;
+    }
+  }
+
+  .overlay-text {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  transform: translateY(-50%);
+
+}
+
   
 
 
