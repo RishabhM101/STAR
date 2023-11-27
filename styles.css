@@ -5,6 +5,41 @@ body, header,ul{
     margin: 0;
     padding: 0;
 }
+
+.container {
+    /* Set the size of the container */
+    width: 100vw; /* 100% of the viewport's width */
+    height: 100vh; /* 100% of the viewport's height */
+  
+    /* Add a background image */
+    background-image: url('images/Astronaut.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Create a pseudo-element for the overlay */
+    position: relative;
+  }
+  
+  .container::before {
+    /* Position and size the overlay */
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    /* Set the color and opacity of the overlay */
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+
+
+
+
+
+
 .logo {
     padding-left: 7em;
 }
