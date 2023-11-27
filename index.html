@@ -9,7 +9,7 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav id="menu-desktop">
               
                     <ul>
                         <li class="logo"><img src="images/logo.png" alt="Logo" style="height:1.5em; padding: 0.8em;"></li>    
@@ -23,7 +23,36 @@
                             <li><a href="#services">Book Your Launch</a></li>
                         </div>
                     </ul>
-            </nav>    
+            </nav>   
+            
+            <!------------------------------------Menu Mobile--------------------->
+            <nav id="menu-mobile">
+
+                <ul>
+                    <li class="logo1"><img src="images/logo.png" alt="Logo" style="height:3vh; padding: 0.3vh"></li>    
+                  
+                </ul>
+
+                <div id="menu-overlay" onclick="toggleMenuOff()"></div>
+
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+    
+                <div id="menu-container" class="hidden">
+                    <a href="index.html" class="menu-item">Home</a>
+                   <!-- <a href="certificates.html" class="menu-item">Certificates</a>-->
+                    <a href="contact.html" class="menu-item">Contact Me</a>
+               
+                </div>
+
+
+            </nav>
+            
+   
+
         </header>
 
 
@@ -34,6 +63,6 @@
          
         </main>
 
-  
+        <script src="script.js"></script>   
     </body>
 </html>
